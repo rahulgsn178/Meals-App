@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    min-height: 100vh;
+}
+
+.meal-wrapper {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(219, 209, 209)
+}
+
+.meal-details-wrapper {
+    margin: 5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    background-color: rgb(219, 209, 209)
+}
+.meal-details-wrapper .meal-item img {
+    margin: 2px auto;
+    width: 18rem;
+    border: 1px solid black;
+}
+
+.meal-search {
+    margin: 2rem 0;
+}
+
+.meal-search-box {
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+    padding: 1rem;
+
+}
+
+.search-content, .search-btn {
+    width: 100%;
+
+}
+
+
+.search-content {
+    padding: 0 1.2rem;
+    font-size: 1.1rem;
+    outline: 0;
+    color: rgb(123, 255, 0);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.search-content::placeholder {
+    color: rgb(123, 255, 0);
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(123, 255, 0);
+    color: white;
+    border: 0;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.search-btn:hover {
+    background-color: rgb(190, 255, 10);
+}
+
+.meal-result {
+    margin-top: 2rem;
+}
+
+.meal {
+    margin: 2rem 0;
+}
+
+#my-fav-meals {
+    text-align: center;
+    margin: 1rem;
+}
+
+#my-fav-meals a {
+    display: inline-block;
+    padding: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background: red;
+    border-radius: 2rem;
+     
+}
+
+.meal-item {
+    border-radius: 1rem;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    margin: 2rem 0;
+
+}
+
+.meal-item img {
+    width: 100%;
+    display: block;
+}
+
+.meal-name {
+    padding: 1rem 0;
+}
+.meal-name h3 {
+    font-size: 1.5rem;
+}
+
+.meal-controls {
+   padding: 2rem 0;
+   display: flex;
+   align-items: stretch;
+   justify-content: center;
+    
+}
+
+.mg {
+    margin: 0 0.5rem;
+}
+
+.btn { 
+    width: 12rem;
+    padding: 1rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background: red;
+    border-radius: 2rem;
+    
+}
+
+.btn:hover, #my-fav-meals a:hover{
+    color: white;
+    background: black;
+}
+
+.description {
+    padding: 2rem 2rem;
+    text-align: justify;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    .meal-search-box {
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .meal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .meal-item {
+        margin: 0;
+    }
+
+
+    @media screen and (min-width: 992px) {
+        .meal {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 0;
+            padding: 4rem;
+        }
+
+        .favorites {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 1rem 3rem;
+            padding: 1rem 3rem;
+        }
+
+        .favorites .meal-item {
+            margin: 1rem 2rem;
+        }
+        .meal-wrapper {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .fav-wrapper {
+            padding: 4rem 0;
+        }
+        .meal-search {
+            margin: 0;
+            margin-top: 3rem;
+        }
+
+    }
+
+    
+}
+
+
+
