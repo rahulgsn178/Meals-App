@@ -11,6 +11,7 @@
 
 .meal-wrapper {
     margin: 0 auto;
+    min-height: 100vh;
     padding: 2rem;
     text-align: center;
     background-color: rgb(219, 209, 209)
@@ -155,6 +156,69 @@
 }
 
 /* Media Queries */
+
+
+@media screen and (min-width: 260px){
+
+
+    .meal-controls {
+        padding: 1rem;
+    }
+
+    .meal-details-wrapper {
+        margin: 0;
+        height: 100vh;
+    }
+
+    .meal-details-wrapper .meal-item img {
+        width: 9rem;
+    }
+    .description {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 376px){
+    .meal-details-wrapper {
+        margin: 0;
+    }
+
+    .meal-details-wrapper .meal-item img {
+        width: 9rem;
+    }
+    .description {
+        padding: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .meal-details-wrapper {
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+        background-color: rgb(219, 209, 209)
+    }
+
+    .meal-details-wrapper .meal-item img {
+        margin: 2px auto;
+        width: 18rem;
+        border: 1px solid black;
+    }
+    
+}
+
 
 @media screen and (min-width: 600px) {
     .meal-search-box {

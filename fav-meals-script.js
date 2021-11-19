@@ -2,11 +2,7 @@ const removeBtn = document.querySelector('.remove-btn');
 const favorites = document.querySelector('.favorites');
 let favMeals;
 window.onload = () => {
-    let url = new URL(document.location.href);
-    console.log(url);
-
-
-
+    
     var sessionString = sessionStorage.getItem('favMeal');
     favMeals = JSON.parse(sessionString);
     console.log(favMeals);
