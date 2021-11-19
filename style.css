@@ -167,7 +167,7 @@
 
     .meal-details-wrapper {
         margin: 0;
-        height: 100vh;
+        height: 100%;
     }
 
     .meal-details-wrapper .meal-item img {
