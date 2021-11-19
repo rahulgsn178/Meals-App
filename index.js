@@ -29,6 +29,10 @@ function getMealList() {
         .then(data => {
             let html = "";
             console.log(data);
+            // validation if meals is not available
+            if(data.meals == null) {
+                return alert('This meal is not available. You can try with the letters in the meal or common meals. for example: cheese, ch, curry, meat, me etc.');
+            }
             mydata = data;
             if(data.meals) {
                 data.meals.forEach(meal => {
@@ -66,7 +70,7 @@ function addToFav(event, mealId) {
         if(!favMeals.includes(meal) && meal.idMeal == mealId) {
             favMeals.push(meal);
             console.log(favMeals);
-            return alert('Added to favorites');
+            return alert('Yeah!!!! Successfully added to your favorites');
         }
     });
 }

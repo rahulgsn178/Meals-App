@@ -128,6 +128,28 @@
     
 }
 
+.back {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.back .back-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 8rem;
+    height: 3rem; 
+}
+.back .back-btn i {
+    font-size: 2rem;
+}
+
+ 
 .mg {
     margin: 0 0.5rem;
 }
@@ -156,8 +178,6 @@
 }
 
 /* Media Queries */
-
-
 @media screen and (min-width: 260px){
 
 
@@ -167,7 +187,7 @@
 
     .meal-details-wrapper {
         margin: 0;
-        height: 100%;
+        height: 100vh;
     }
 
     .meal-details-wrapper .meal-item img {
@@ -201,6 +221,7 @@
         font-size: 1rem;
         border-radius: 1rem;
     }
+
 }
 
 @media screen and (min-width: 568px) {
@@ -236,8 +257,17 @@
         gap: 2rem;
     }
 
+    .favorites {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
     .meal-item {
         margin: 0;
+    }
+    .meal-wrapper {
+        min-width: fit-content;
     }
 
 
@@ -253,8 +283,7 @@
         .favorites {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            margin: 1rem 3rem;
-            padding: 1rem 3rem;
+            gap: 2rem;
         }
 
         .favorites .meal-item {
